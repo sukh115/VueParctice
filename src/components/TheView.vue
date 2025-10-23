@@ -7,13 +7,14 @@
       <FancyButton>Click!! <span style="color: red">@@@</span></FancyButton>
       <hr />
       <AppCard>
-        <!-- <template #[slotArgs]>제목입니다</template> -->
+        <template #[slotArgs]>제목입니다</template>
         <template #default="{ childMessage, helloMessage }"
-          >{{ childMessage }}, {{ helloMessage }}</template
-        >
-        <!-- 암시적으로 Dafault 슬롯입니다
-        <template #footer>푸터입니다</template> -->
+          >{{ childMessage }}, {{ helloMessage }}
+        </template>
+        <template #footer>푸터입니다</template>
       </AppCard>
+      <hr />
+      <AppCard> <template #default> 게시글입니다 </template> </AppCard>
     </div>
   </main>
 </template>
