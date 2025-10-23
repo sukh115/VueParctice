@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>순수 JS로 v-model 구현하기</title>
+  </head>
+  <body>
+    <div>
+      <h2>input Value</h2>
+      <input type="text" id="input-field" />
+      <div id="input-display"></div>
+      <h2>textarea Value</h2>
+      <textarea id="textarea-field"></textarea>
+      <div id="textarea-display"></div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const inputField = document.getElementById('input-field')
+        const inputDisplay = document.getElementById('input-display')
+        const textareaField = document.getElementById('textarea-field')
+        const textareaDisplay = document.getElementById('textarea-display')
+
+        inputField.addEventListener('input', (event) => {
+          inputDisplay.textContent = event.target.value
+        })
+
+        textareaField.addEventListener('input', (event) => {
+          textareaDisplay.textContent = event.target.value
+        })
+      })
+    </script>
+  </body>
+</html>
