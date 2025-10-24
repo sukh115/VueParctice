@@ -2,18 +2,18 @@
   <div>
     <main>
       <div class="container py-4">
-        <LifeCycleHook></LifeCycleHook>
+        <TemplateRefs></TemplateRefs>
       </div>
     </main>
   </div>
 </template>
 
 <script>
-import LifeCycleHook from './LifeCycleHook.vue'
+import TemplateRefs from './TemplateRefs.vue'
 
 export default {
   components: {
-    LifeCycleHook,
+    TemplateRefs,
   },
   setup() {
     return {}
