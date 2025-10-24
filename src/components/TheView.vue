@@ -2,18 +2,18 @@
   <div>
     <main>
       <div class="container py-4">
-        <TemplateRefs></TemplateRefs>
+        <ScriptSetup />
       </div>
     </main>
   </div>
 </template>
 
 <script>
-import TemplateRefs from './TemplateRefs.vue'
+import ScriptSetup from './ScriptSetup.vue'
 
 export default {
   components: {
-    TemplateRefs,
+    ScriptSetup,
   },
   setup() {
     return {}
